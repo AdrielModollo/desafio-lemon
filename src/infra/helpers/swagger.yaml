@@ -1,0 +1,50 @@
+swagger: '2.0'
+info:
+  title: Checar consumo de clientes e verificar elegibilidade
+  version: 0.0.1
+  description: |
+    Desafio Lemon
+    Adriel Marcelo Costa Modollo
+
+    Criar um programa que verifique a elegibilidade e não elegibilidade através do consumo e retorne ao cliente caso seja apto a aderir a Lemon.
+
+    Github: https://github.com/AdrielModollo
+    Repository: https://github.com/AdrielModollo/desafio-lemon
+    LinkedIn: https://www.linkedin.com/in/adriel-modollo/
+basePath: /
+paths:
+  /elegibility:
+    post:
+      tags:
+        - Verificar
+      summary: "Verificar se o cliente está apto ou não através do consumo de energia"
+      description: Através do envio do json enviamos todos os dados necessário para verificar se o cliente está elegível ou não através de sua média de consumo.
+      parameters:
+        - in: body
+          name: body
+          type: object
+          required: true
+          schema:
+            type: object
+            properties:
+              numeroDoDocumento: 
+                type: string
+              tipoDeConexao:
+                type: string
+              classeDeConsumo:
+                type: string
+              modalidadeTarifaria:
+                type: string
+              historicoDeConsumo:
+                type: array
+                items:
+                  type: number
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Esse status é retornado caso o cliente obtenha sucesso em sua verificação.
+        400:
+          description: Verifica se os campos informados está correto!
+        500:
+          description: Erro interno do servidor
