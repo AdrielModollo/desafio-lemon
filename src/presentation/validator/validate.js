@@ -1,4 +1,4 @@
-const Yup = require('Yup');
+const Yup = require('yup');
 
 const validateCustomerConsumption = require('../../main/config/enum/costumer-consumption');
 const validateModalityTarify = require('../../main/config/enum/modality-tarify');
