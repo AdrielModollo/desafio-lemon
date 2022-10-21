@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage --silent",
-    "dev": "nodemon",
+    "dev": "nodemon src/index.js",
     "lint": "npx eslint  \"src/**/*.js\" --fix ",
     "docker": "docker-compose up -d"
   },
