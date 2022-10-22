@@ -13,13 +13,13 @@ Node.js
 
 ### Pacotes utilizados
 
-cors para liberação de acesso
-jest para testes unitários
-yup para validação de valores json
-swagger-ui-expresspara criação da página visual de descrição e teste da API
-yamljs para leitura do arquivo yaml de configuração do Swagger
-nodemon para iniciar a aplicação com reinício automático
-eslint para configuração do ESLint
+1. cors para liberação de acesso
+2. jest para testes unitários
+3. yup para validação de valores json
+4. swagger-ui-expresspara criação da página visual de descrição e teste da API
+5. yamljs para leitura do arquivo yaml de configuração do Swagger
+6. nodemon para iniciar a aplicação com reinício automático
+7. eslint para configuração do ESLint
 
 ### Arquitetura utilizada
 
