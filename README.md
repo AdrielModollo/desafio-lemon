@@ -23,6 +23,7 @@ eslint para configuração do ESLint
 
 ### Arquitetura utilizada
 
+```
 /__tests__ testes unitários ou de integração
 /controllers arquivo para controlar a route e conectar-se com a lógica da aplicação com tratativas
 domain/services arquivos que contém lógica de serviço da aplicação
@@ -32,6 +33,7 @@ main/config/enum definição de valores utilizados em cada situação
 main/middlewares arquivo para validar erros e evitar quebrar a aplicação
 main/routes configuramos as rotas utilizadas dentro da api
 presentation/validator validação de dados
+```
 
 ### Comandos para aplicação
 
