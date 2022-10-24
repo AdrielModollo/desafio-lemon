@@ -1,17 +1,17 @@
 const requiredFields = {
-    numeroDoDocumento: undefined,
-    tipoDeConexao: undefined,
-    classeDeConsumo: undefined,
-    modalidadeTarifaria: undefined,
-    historicoDeConsumo: undefined
+    "numeroDoDocumento": undefined,
+    "tipoDeConexao": undefined,
+    "classeDeConsumo": undefined,
+    "modalidadeTarifaria": undefined,
+    "historicoDeConsumo": undefined
 };
 
-const classConsumerNotAccept = {
-    numeroDoDocumento: "14041737706",
-    tipoDeConexao: "bifasica",
-    classeDeConsumo: "comercial",
-    modalidadeTarifaria: "convencional",
-    historicoDeConsumo: [
+const classConsumerAccept = {
+    "numeroDoDocumento": "14041737706",
+    "tipoDeConexao": "bifasica",
+    "classeDeConsumo": "comercial",
+    "modalidadeTarifaria": "convencional",
+    "historicoDeConsumo": [
         3878,
         9760,
         5976,
@@ -30,5 +30,5 @@ const classConsumerNotAccept = {
 
 module.exports = {
     requiredFields,
-    classConsumerNotAccept,
+    classConsumerAccept,
 }
